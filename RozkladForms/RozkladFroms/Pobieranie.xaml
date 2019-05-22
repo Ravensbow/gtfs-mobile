@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RozkladForms.Pobieranie"
+             Title="Menedzer Miast">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Dostepne Miasta:">
+                        <SwitchCell x:Name="sPoznan" Text="Poznan" On="false"/>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                             <Label x:Name="aktPoznan" Text="Nieaktualne"
+                              TextColor="#f35e20" />
+                             <Label x:Name="pobPoznan" Text="Niepobrano"
+                              HorizontalOptions="EndAndExpand"
+                              TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                        <SwitchCell x:Name="sWroclaw" Text="Wroclaw" On="false" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="aktWroclaw" Text="Nieaktualne"
+                              TextColor="#f35e20" />
+                                <Label x:Name="pobWroclaw" Text="Niepobrano"
+                              HorizontalOptions="EndAndExpand"
+                              TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                        <SwitchCell x:Name="sSzczecin" Text="Szczecin" On="false" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="aktSzczecin" Text="Nieaktualne"
+                              TextColor="#f35e20" />
+                                <Label x:Name="pobSzczecin" Text="Niepobrano"
+                              HorizontalOptions="EndAndExpand"
+                              TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                        <SwitchCell x:Name="sBydgoszcz" Text="Bydgoszcz" On="false" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="aktBydgoszcz" Text="Nieaktualne"
+                              HorizontalOptions="StartAndExpand"
+                              TextColor="#f35e20" />
+                                <Label x:Name="pobBydgoszcz" Text="Niepobrano"
+                              HorizontalOptions="EndAndExpand"
+                              TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button x:Name="bRozklad" Text="Rozklad" Clicked="OnRozklad"/>
+            <Button x:Name="bPobierz" Text="Pobierz" Clicked="OnPobieranie"/>
+            <Button x:Name="bUsun" Text="Usun" Clicked="OnUsun"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

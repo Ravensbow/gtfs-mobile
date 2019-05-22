@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="Conentpejdz"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RozkladForms"
+             x:Class="RozkladForms.MainPage"
+             Title="Miasto">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="ZmienMiasto" Order="Secondary" Icon="Icon.png" Text="Zmien Miasto" Priority="0" Clicked="OnZmien" />
+        <ToolbarItem x:Name="MeneMiasto" Order="Secondary" Icon="Icon.png" Text="Menedzer Miast" Priority="1" Clicked="OnMen" />
+        
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Image Source="bannerztm.png"/>
+        <ScrollView x:Name="Scrolleee" Orientation="Vertical">
+
+            <Grid x:Name="Laj">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
